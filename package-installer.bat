@@ -13,6 +13,7 @@ py -3.8 -m discord
 py -3.8 -m string
 py -3.8 -m secrets
 py -3.8 -m json
+py -3.8 -m rich
 py -3.8 -m time
 py -3.8 -m re
 cls
