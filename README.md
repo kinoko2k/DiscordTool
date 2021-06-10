@@ -4,16 +4,18 @@
 # 特徴
 - 軽量
 - 多機能
+- わかりやすいUI
+- Proxyをサポート
 
 # 一斉参加の招待コード
 NG例
 
 ```
-discord.gg/abc
+discord.gg/example
 ```
 OK例
 ```
-abc
+example
 ```
 「discord.gg/」以降のランダムなアルファベットのコード。
 
