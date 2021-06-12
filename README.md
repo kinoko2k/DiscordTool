@@ -41,7 +41,7 @@ example
 - re
 - rich
 
-#ライブラリの役割
+# ライブラリの役割
 - discord.py = SpammerやLeave floodに使用(API使用)
 - requests = Join floodやNitro checkerに使用(JsonAPI使用)
 - string = Nitro generatorに使用
