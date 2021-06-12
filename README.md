@@ -51,3 +51,6 @@ example
 - time = 数秒間の待機(10秒後にプログラムを終了させる際など)に使用
 - re = replaceに使用
 - rich = コンソール出力の色付け等に使用
+
+# DiscordToolAPI
+Coming Soon
