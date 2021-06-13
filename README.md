@@ -32,7 +32,7 @@ mfa.abc
 ```
 
 # HTTPのProxy設定方法
-ProxyのHTTpはhttp-proxy.txtに1行ずつ書いていってください。
+ProxyのHTTPはhttp-proxy.txtに1行ずつ書いていってください。
 Example:
 ```
 http://111.111.111.111:80
@@ -46,7 +46,8 @@ http://111.111.111.111:8080
 
 #HTTPSのProxy設定方法
 ProxyのHTTPSはHTTPとほぼ同じです。
-http://をhttps://にして、ポートをそのProxyの物に変更するだけです。
+httpをhttpsにして、ポートをそのProxyの物に変更するだけです。
+ただhttps-proxy.txtに保存してください。
 
 
 # 一斉参加の招待コード
