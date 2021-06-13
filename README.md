@@ -1,6 +1,9 @@
 # DiscordTool
 簡単にWebhookのスパムや一斉参加、退出等の基本動作ができます。
 
+# 動作環境
+Python 3.8.9(Path登録済み)
+
 # 特徴
 - 軽量
 - 多機能
@@ -8,6 +11,43 @@
 - Proxyをサポート
 - SelfBotをサポート
 - エラーメッセージあり
+
+# Tokenの設定方法
+Tokenはtokens.txtに1行ずつ書いていってください。
+Example:
+```
+abc
+abc
+abc
+```
+NG:
+```
+abcabcabc
+```
+そしてTokenはBotTokenではなくUserTokenである必要があります。
+もしTokenの先端に「mfa」とついていたらそれも含めてください。
+Example:
+```
+mfa.abc
+```
+
+# HTTPのProxy設定方法
+ProxyのHTTpはhttp-proxy.txtに1行ずつ書いていってください。
+Example:
+```
+http://111.111.111.111:80
+```
+必ず「http」と「:80」は入れてください。
+「:80」はProxyのポート番号にしてください。
+Example:
+```
+http://111.111.111.111:8080
+```
+
+#HTTPSのProxy設定方法
+ProxyのHTTPSはHTTPとほぼ同じです。
+http://をhttps://にして、ポートをそのProxyの物に変更するだけです。
+
 
 # 一斉参加の招待コード
 NG例
