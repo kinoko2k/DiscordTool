@@ -93,5 +93,100 @@ example
 - re = replaceに使用
 - rich = コンソール出力の色付け等に使用
 
-# DiscordToolAPI
-Coming Soon
+# DiscordToolAPI - 使用準備
+APIを使用するにはまずインポートする必要があります。
+DiscordToolAPI.pyを同じディレクトリに入れてimportします。
+```python
+import DiscordToolAPI.py as DTAPI
+```
+これで使えるようになりました。
+```python
+as DTAPI
+```
+はDTAPIでpyファイルの関数等を呼び出せるようにするものです。
+
+# DiscordToolAPI - InviteAPI
+InviteAPIは招待リンクの情報を確認したりTokenを使いユーザーを参加させたりできます。
+```python
+DTAPI.join(code, token)
+```
+codeは招待リンクのコードです。
+```
+discord.gg/Example
+```
+この場合Exampleに当たります。
+もしコードがExampleの情報を見たければ
+```python
+DTAPI.join(Example)
+
+```
+になります。
+もしabcと言うTokenを持っている人にExampleと言うコードのサーバーに参加してほしい場合
+```python
+DTAPI.join(Example, abc)
+```
+となります。
+
+# DiscordToolAPI - SendWebhook
+Webhookをもっと簡単に送信できるようにします。
+```python
+wsend(url, data)
+```
+です。
+データは自分で設定する必要があります。
+構文は
+```python
+data = {
+  "content": "test"
+}
+```
+となります。
+usernameやavatarの指定は
+```python
+"username": "name",
+"avatar_url": "url"
+```
+となります。
+最終的な構文は
+```python
+data = {
+  "content": "Webhook Send API",
+  "username": "Discord Tool"
+}
+wsend("discordapp.com/URL", data=data)
+```
+となります。
+
+# DiscordToolAPI - TokenCheck
+Tokenをチェックすることができます。
+登録情報や基本的な情報まで!
+```python
+check(token)
+```
+簡単ですね。
+例えばabcと言うtokenを調べたければ
+```python
+check("abc")
+```
+となります。
+
+# DiscordToolAPI - DisableToken
+簡単にTokenを無効にできます。
+構文はこれも簡単で
+```python
+disable(invite, token)
+```
+です。
+実はinvitecodeつまりjoin()と同じコードが必要になります。
+例えば招待コードが
+```
+discord.gg/Example
+```
+であれば「Example」の部分がコードになります。
+そしてTokenはUserTokenです。
+なのでExampleと言う招待コードのサーバーでabcと言うTokenを無効にする場合
+```python
+disable(Example, abc)
+```
+となります。
+ただ成功してもなんのレスポンスもないので注意。
